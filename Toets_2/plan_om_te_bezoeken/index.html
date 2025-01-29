@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home pagina</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+    <div id="header-container">
+        <h1 id="title">De Yayoi Kusama museum</h1>
+        <nav> 
+            <ul id="nav">
+                <li class="Nbuttons"><a href="../homepagina/index.html">Home</a></li>
+                <li class="Nbuttons"><a href="../kunstwerk/index.html">Kunstwerken</a></li>
+                <li class="Nbuttons">
+                    <a href="#">plan je bezoek</a>
+                    <ul id="dropdown">
+                        <li><a href="#bestel-tickets">Bestel tickets</a></li>
+                        <li><a href="#openingstijden">Openingstijden</a></li>
+                        <li><a href="#adresgegevens">Adresgegevens</a></li>
+                        <li><a href="#parkeren">Parkeren</a></li>
+                        <li><a href="#ov">OV</a></li>
+                    </ul>
+                </li>
+                <li class="Nbuttons"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div>
+        <video src="../media/Yayoi Kusama Museum 🔴⚪️.mp4"></video>
+    </div>
+    <div class="container-over-Yayoi-kausama">
+        <div class="box" id="bestel-tickets">
+            <h2>Bestel Tickets</h2>
+            <p>Koop hier je tickets voor het Yayoi Kusama museum. Vul het onderstaande formulier in om je tickets te bestellen.</p>
+            <form action="/submit-ticket" method="post">
+                <label for="name">Naam:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="date">Bezoekdatum:</label>
+                <input type="date" id="date" name="date" required><br><br>
+                <label for="tickets">Aantal tickets:</label>
+                <input type="number" id="tickets" name="tickets" min="1" max="10" required><br><br>
+                <input type="submit" value="Bestel Tickets">
+            </form>
+        </div>
+
+        <div class="box" id="openingstijden">
+            <h2>Openingstijden</h2>
+            <p>Hieronder vindt u de openingstijden van het Yayoi Kusama museum:</p>
+            <ul>
+                <li>Maandag: Gesloten</li>
+                <li>Dinsdag: 10:00 - 18:00</li>
+                <li>Woensdag: 10:00 - 18:00</li>
+                <li>Donderdag: 10:00 - 18:00</li>
+                <li>Vrijdag: 10:00 - 20:00</li>
+                <li>Zaterdag: 10:00 - 20:00</li>
+                <li>Zondag: 10:00 - 18:00</li>
+            </ul>
+        </div>
+
+        <div class="box" id="adresgegevens">
+            <h2>Adresgegevens</h2>
+            <p>Bezoek ons op het volgende adres:</p>
+            <address>
+                De Yayoi Kusama Museum<br>
+                Kunststraat 123<br>
+                1000 AB Amsterdam<br>
+                Nederland
+            </address>
+            <p>Telefoon: <a href="tel:+31201234567">+31 20 123 4567</a></p>
+            <p>Email: <a href="mailto:info@yayoi-kusama-museum.nl">info@yayoi-kusama-museum.nl</a></p>
+        </div>
+
+        <div class="box" id="parkeren">
+            <h2>Parkeren</h2>
+            <p>Er zijn verschillende parkeermogelijkheden in de buurt van het Yayoi Kusama museum:</p>
+            <ul>
+                <li>Parkeergarage Museumplein - Van Baerlestraat 33B, 1071 AP Amsterdam</li>
+                <li>Q-Park Europarking - Marnixstraat 250, 1016 TL Amsterdam</li>
+                <li>Parkeergarage Byzantium - Tesselschadestraat 1G, 1054 ET Amsterdam</li>
+            </ul>
+            <p>Let op: Parkeertarieven kunnen variëren. Wij raden aan om met het openbaar vervoer te komen.</p>
+        </div>
+
+        <div class="box" id="ov">
+            <h2>Openbaar Vervoer</h2>
+            <p>Het Yayoi Kusama museum is goed bereikbaar met het openbaar vervoer:</p>
+            <ul>
+                <li>Tram 2, 5 en 12 - Halte Museumplein</li>
+                <li>Bus 347 en 357 - Halte Rijksmuseum</li>
+                <li>Metro 52 - Halte Vijzelgracht</li>
+            </ul>
+            <p>Plan uw reis via de <a href="https://www.9292.nl" target="_blank">9292 reisplanner</a>.</p>
+        </div>
+    </div>
+</main>
+<footer>
+    &copy; 2025 De Yayoi Kusama Museum. Heeft Recht .
+</footer>
+</body>
+</html>
